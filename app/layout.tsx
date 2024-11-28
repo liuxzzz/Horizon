@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/navbar";
 import { fontSans } from "@/config/fonts";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -44,7 +45,7 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3"></footer>
+            <Footer />
           </div>
         </Providers>
       </body>
